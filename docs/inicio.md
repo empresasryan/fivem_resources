@@ -14,7 +14,7 @@ Este entorno nos aportará las herramientas para poder desarrollar en C#. La pá
 
 Terminada la descarga, procedemos a su instalación, donde deberemos seleccionar la opción `Desarrollo de escritorio de .NET` y avanzar con la instalación:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/ainstalar.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/ainstalar.JPG">
 
 Cuando termine, continuar con el siguiente apartado. Más adelante indicaremos los pasos a seguir para crear un nuevo proyecto
 
