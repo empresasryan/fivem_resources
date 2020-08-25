@@ -22,7 +22,7 @@ Cuando termine, continuar con el siguiente apartado. Más adelante indicaremos l
 
 Nos hará falta para clonar repositorios e incluso, cuando desarrollemos, para poder compartir nuestro código con el mundo. Para ello vamos <a href="https://git-scm.com/download/win">aquí</a> y lo descargamos:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/webgit.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/webgit.JPG">
 
  La instalación es sencilla y pueden dejarse los parámetros por defecto, al menos que se desee modificar alguno.
 
@@ -30,7 +30,7 @@ Nos hará falta para clonar repositorios e incluso, cuando desarrollemos, para p
 
 Para poder desarrollar y probar los módulos vamos a necesitar FiveM, el cual podemos descargar de <a href="https://fivem.net/">aquí</a>:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/webfivem.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/webfivem.JPG">
 
 FiveM es el que nos va a proporcionar las librerías para poder llevar a cabo el desarrollo.
 
@@ -56,7 +56,7 @@ C:\Users\nombreUsuario\FXServer\server\FXServer.exe +exec server.cfg
 
 Una vez terminados todos los pasos, podemos ejecutar el `server.bat` y debería abrirse una consola, donde veremos que se cargan ya algunos módulos por defecto. En esta consola será desde donde podremos cargar los módulos que vayamos creando. Si todo ha funcionado correctamente, debería mostrar algo parecido a lo siguiente:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/consola.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/consola.JPG">
 
 Si le damos a `Enter` podremos ver que se puede escribir en la consola. Algunos comandos a recordar son `start nombreModulo`, `stop nombreModulo`, `restart nombreModulo` y `refresh`.
 
@@ -64,11 +64,11 @@ Si le damos a `Enter` podremos ver que se puede escribir en la consola. Algunos 
 
 Ahora ya podemos ejecutar FiveM. Una vez dentro, debemos hacer clic en el botón de localhost, que automáticamente debería conectarse al recién iniciado servidor:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/localhost.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/localhost.JPG">
 
 Mientras cargan todos los elementos necesario, veremos una pantalla de carga en la que podremos entretenernos con el movimiento de un monigote mientras esperamos:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/localhost1.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/localhost1.JPG">
 
 Una vez cargado todo, nos hará aparecer en un lugar aletorio del mapa. Entonces ya podemos cerciorarnos de que ha funcionado correctamente. Si queremos acceder a la consola dentro del juego usaremos `F8`. Para acceder al chat usaremos la letra `T`.
 
@@ -76,88 +76,88 @@ Una vez cargado todo, nos hará aparecer en un lugar aletorio del mapa. Entonces
 
 Cuando iniciemos el MVSC, lo primero que haremos será crear un nuevo proyecto:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/nuevoproyecto.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/nuevoproyecto.JPG">
 
 Tras darle a siguien, buscamos **biblioteca de clases (.NET Framework)** y la escogemos:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/bibliotecaclases.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/bibliotecaclases.JPG">
 
 En la siguiente pantalla indicamos la configuración que deseemos:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/nombreproyecto.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/nombreproyecto.JPG">
 
 Finalmente, lo creamos. Una vez dentro, hacemos clic con el botón derecho en la clase en el panel derecho, justo debajo de donde pone `Solución nombreClase`, y seleccionamos **Propiedades**:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/propiedades.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/propiedades.JPG">
 
 En el apartado **aplicación** tenemos que añadirle la extensión `.net` al nombre del ensamblado y guardar con `Control+S`:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/net.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/net.JPG">
 
 Por último, volvemos a hacer clic derecho en el mismo lugar pero esta vez vamos a **Agregar** y escogemos **Referencia**:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/referencia.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/referencia.JPG">
 
 En el apartado **Examinar** tendremos que añadir el `.dll` cuyo nombre es `CitizenFX.Core.dll`. Éste debería encontrarse en la ruta `C:\Users\nombreUsuario\AppData\Local\FiveM\FiveM.app\citizen\clr2\lib\mono\4.5`. Lo copiamos y lo pegamos en el proyecto de MVSC creado. Tras ello lo añadimos desde el apartado **Examinar**. Asegurémonos de que está marcado:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/citizenfxcore.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/citizenfxcore.JPG">
 
 Una vez hecho esto, ya podemos empezar a programar. En el [anexo](#a2) dejo un código básico de ejemplo, el cual podemos añadir al proyecto. Debería funcionar sin problemas, ya que todas las dependencias están cubiertas. Una vez lo hemos pegado en el archivo creado, seleccionaremos la opción release:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/release.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/release.JPG">
 
 Y compilaremos la solución:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/compile.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/compile.JPG">
 
 Con esta compilación obtendremos una serie de archivos. El que nos interesa es el que tiene el nombre de nuestra solución, que en mi caso es `ClassLibrary1.net.dll`:
  
- <img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/compiled.jpg">
+ <img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/compiled.JPG">
 
 Copiamos dicho `.dll` y lo pegamos en `rutaEscogida\server\server-data\resources\[local]\MiPrimerModulo`, siendo **MiPrimerModulo** una carpeta que creamos, preferiblemente, con el nombre del propio módulo:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/classlibrary.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/classlibrary.JPG">
 
 Tras esto tenemos que crear un `fxmanifest.lua` con el contenido que indicamos en el [anexo](#a3). Lo modificamos según nuestras necesidades:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/fxmanifest.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/fxmanifest.JPG">
 
 Ahora, desde la consola, hacemos un `refresh` para que detecte el nuevo módulo añadido:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/refreshmodule.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/refreshmodule.JPG">
 
 Tras ello, iniciamos el módulo:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/startmodule.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/startmodule.JPG">
 
 Si ahora volvemos a FiveM, veremos desde la consola de desarrollador que se ha cargado correctamente:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/loaded.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/loaded.JPG">
 
 Si vamos al chat del juego y escribimos `/car`:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/chat.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/chat.JPG">
 
 Debería hacer aparecer un coche y nos meterá automáticamente dentro de él. Además de mostrarnos por chat el mensaje que le hemos indicado en el código con el nombre del modelo:
 
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/coche.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/coche.JPG">
 
 Tener en cuenta que, por defecto, si no le hemos indicado ningún parámetro, nos hace aparecer un coche por defecto, cuyo modelo es el `adder`. Pero si le pasas el modelo deseado como parámetro, lo hará aparecer:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/gp1.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/gp1.JPG">
 
 Si, por otro lado, el modelo no existe, entonces lo indica por chat:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/noexiste.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/noexiste.JPG">
 
 Si queremos hacer que deje de estar activo el módulo, podemos escribir en la consola `stop nombreModulo`:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/stopmodule.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/stopmodule.JPG">
 
 Y vemos que ahora ya no hace nada el comando en FiveM:
 
-<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/nospawn.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/nospawn.JPG">
 
 Pues con esto se termina el tutorial que debería permitiros poder desarrollar sin problemas módulos para FiveM.
 
