@@ -10,7 +10,7 @@ Por supuesto, tener comprado e instalado el GTA V, ya que cuando instalemos Five
 
 Este entorno nos aportará las herramientas para poder desarrollar en C#. La página web desde la que se puede descargar el software es <a href="https://visualstudio.microsoft.com/es/vs/">ésta</a>, donde seleccionaremos `Community 2019` en el desplegable:
 
-<img src="./img/web.jpg">
+<img src="https://github.com/empresasryan/fivem_resources/blob/master/docs/img/web.JPG">
 
 Terminada la descarga, procedemos a su instalación, donde deberemos seleccionar la opción `Desarrollo de escritorio de .NET` y avanzar con la instalación:
 
