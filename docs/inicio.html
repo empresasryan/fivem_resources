@@ -10,11 +10,11 @@ Por supuesto, tener comprado e instalado el GTA V, ya que cuando instalemos Five
 
 Este entorno nos aportará las herramientas para poder desarrollar en C#. La página web desde la que se puede descargar el software es <a href="https://visualstudio.microsoft.com/es/vs/">ésta</a>, donde seleccionaremos `Community 2019` en el desplegable:
 
-![webMVSC](img/web.jpg "Página web de descarga Microsoft Visual Studio Community 2019")
+<img src="img/web.jpg">
 
 Terminada la descarga, procedemos a su instalación, donde deberemos seleccionar la opción `Desarrollo de escritorio de .NET` y avanzar con la instalación:
 
-![instalacionMVSC](img/ainstalar.jpg "Opción a instalar")
+<img src="img/ainstalar.jpg">
 
 Cuando termine, continuar con el siguiente apartado. Más adelante indicaremos los pasos a seguir para crear un nuevo proyecto
 
@@ -22,7 +22,7 @@ Cuando termine, continuar con el siguiente apartado. Más adelante indicaremos l
 
 Nos hará falta para clonar repositorios e incluso, cuando desarrollemos, para poder compartir nuestro código con el mundo. Para ello vamos <a href="https://git-scm.com/download/win">aquí</a> y lo descargamos:
 
-![webgit](img/webgit.jpg "Página web de descarga de Git")
+<img src="img/webgit.jpg">
 
  La instalación es sencilla y pueden dejarse los parámetros por defecto, al menos que se desee modificar alguno.
 
@@ -30,7 +30,7 @@ Nos hará falta para clonar repositorios e incluso, cuando desarrollemos, para p
 
 Para poder desarrollar y probar los módulos vamos a necesitar FiveM, el cual podemos descargar de <a href="https://fivem.net/">aquí</a>:
 
-![webfivem](img/webfivem.jpg "Página web de descarga de FiveM")
+<img src="img/webfivem.jpg">
 
 FiveM es el que nos va a proporcionar las librerías para poder llevar a cabo el desarrollo.
 
@@ -56,7 +56,7 @@ C:\Users\nombreUsuario\FXServer\server\FXServer.exe +exec server.cfg
 
 Una vez terminados todos los pasos, podemos ejecutar el `server.bat` y debería abrirse una consola, donde veremos que se cargan ya algunos módulos por defecto. En esta consola será desde donde podremos cargar los módulos que vayamos creando. Si todo ha funcionado correctamente, debería mostrar algo parecido a lo siguiente:
 
-![consola](img/consola.jpg "Consola")
+<img src="img/consola.jpg">
 
 Si le damos a `Enter` podremos ver que se puede escribir en la consola. Algunos comandos a recordar son `start nombreModulo`, `stop nombreModulo`, `restart nombreModulo` y `refresh`.
 
@@ -64,11 +64,11 @@ Si le damos a `Enter` podremos ver que se puede escribir en la consola. Algunos 
 
 Ahora ya podemos ejecutar FiveM. Una vez dentro, debemos hacer clic en el botón de localhost, que automáticamente debería conectarse al recién iniciado servidor:
 
-![localhost](img/localhost.jpg "Localhost")
+<img src="img/localhost.jpg">
 
 Mientras cargan todos los elementos necesario, veremos una pantalla de carga en la que podremos entretenernos con el movimiento de un monigote mientras esperamos:
 
-![localhost](img/localhost1.jpg "Pantalla espera")
+<img src="img/localhost1.jpg">
 
 Una vez cargado todo, nos hará aparecer en un lugar aletorio del mapa. Entonces ya podemos cerciorarnos de que ha funcionado correctamente. Si queremos acceder a la consola dentro del juego usaremos `F8`. Para acceder al chat usaremos la letra `T`.
 
@@ -76,87 +76,88 @@ Una vez cargado todo, nos hará aparecer en un lugar aletorio del mapa. Entonces
 
 Cuando iniciemos el MVSC, lo primero que haremos será crear un nuevo proyecto:
 
-![nuevo proyecto](img/nuevoproyecto.jpg "Crear nuevo proyecto")
+<img src="img/nuevoproyecto.jpg">
 
 Tras darle a siguien, buscamos **biblioteca de clases (.NET Framework)** y la escogemos:
 
-![biblioteca de clases](img/bibliotecaclases.jpg "Biblioteca de clases")
+<img src="img/bibliotecaclases.jpg">
 
 En la siguiente pantalla indicamos la configuración que deseemos:
 
-![nombre del proyecto](img/nombreproyecto.jpg "Nombre del proyecto")
+<img src="img/nombreproyecto.jpg">
 
 Finalmente, lo creamos. Una vez dentro, hacemos clic con el botón derecho en la clase en el panel derecho, justo debajo de donde pone `Solución nombreClase`, y seleccionamos **Propiedades**:
 
-![propiedades](img/propiedades.jpg "Propiedades")
+<img src="img/propiedades.jpg">
 
 En el apartado **aplicación** tenemos que añadirle la extensión `.net` al nombre del ensamblado y guardar con `Control+S`:
 
-![net](img/net.jpg "Añadir extensión .NET")
+<img src="img/net.jpg">
 
 Por último, volvemos a hacer clic derecho en el mismo lugar pero esta vez vamos a **Agregar** y escogemos **Referencia**:
 
-![referencia](img/referencia.jpg "referencia")
+<img src="img/referencia.jpg">
 
 En el apartado **Examinar** tendremos que añadir el `.dll` cuyo nombre es `CitizenFX.Core.dll`. Éste debería encontrarse en la ruta `C:\Users\nombreUsuario\AppData\Local\FiveM\FiveM.app\citizen\clr2\lib\mono\4.5`. Lo copiamos y lo pegamos en el proyecto de MVSC creado. Tras ello lo añadimos desde el apartado **Examinar**. Asegurémonos de que está marcado:
 
-![citizenfxcore](img/citizenfxcore.jpg "DLL CitizenFX.Core")
+<img src="img/citizenfxcore.jpg">
 
 Una vez hecho esto, ya podemos empezar a programar. En el [anexo](#a2) dejo un código básico de ejemplo, el cual podemos añadir al proyecto. Debería funcionar sin problemas, ya que todas las dependencias están cubiertas. Una vez lo hemos pegado en el archivo creado, seleccionaremos la opción release:
 
-![release](img/release.jpg "Release")
+<img src="img/release.jpg">
 
 Y compilaremos la solución:
 
-![compile](img/compile.jpg "Compile")
+<img src="img/compile.jpg">
 
 Con esta compilación obtendremos una serie de archivos. El que nos interesa es el que tiene el nombre de nuestra solución, que en mi caso es `ClassLibrary1.net.dll`:
  
-![compiled](img/compiled.jpg "Compiled")
+ <img src="img/compiled.jpg">
 
 Copiamos dicho `.dll` y lo pegamos en `rutaEscogida\server\server-data\resources\[local]\MiPrimerModulo`, siendo **MiPrimerModulo** una carpeta que creamos, preferiblemente, con el nombre del propio módulo:
 
-![class library](img/classlibrary.jpg "Class Library")
+<img src="img/classlibrary.jpg">
 
 Tras esto tenemos que crear un `fxmanifest.lua` con el contenido que indicamos en el [anexo](#a3). Lo modificamos según nuestras necesidades:
 
-![fxmanifest](img/fxmanifest.jpg "FX Manifest")
+<img src="img/fxmanifest.jpg">
 
 Ahora, desde la consola, hacemos un `refresh` para que detecte el nuevo módulo añadido:
 
-![refreshmodule](img/refreshmodule.jpg "Refresh Module")
+<img src="img/refreshmodule.jpg">
 
 Tras ello, iniciamos el módulo:
 
-![startmodule](img/startmodule.jpg "Start Module")
+<img src="img/startmodule.jpg">
 
 Si ahora volvemos a FiveM, veremos desde la consola de desarrollador que se ha cargado correctamente:
 
-![loaded](img/loaded.jpg "Loaded")
+<img src="img/loaded.jpg">
 
 Si vamos al chat del juego y escribimos `/car`:
 
-![chat](img/chat.jpg "Chat")
+<img src="img/chat.jpg">
 
 Debería hacer aparecer un coche y nos meterá automáticamente dentro de él. Además de mostrarnos por chat el mensaje que le hemos indicado en el código con el nombre del modelo:
 
-![coche](img/coche.jpg "Spawn coche")
+
+<img src="img/coche.jpg">
 
 Tener en cuenta que, por defecto, si no le hemos indicado ningún parámetro, nos hace aparecer un coche por defecto, cuyo modelo es el `adder`. Pero si le pasas el modelo deseado como parámetro, lo hará aparecer:
 
-![gp1](img/gp1.jpg "Spawn GP1")
+<img src="img/gp1.jpg">
 
 Si, por otro lado, el modelo no existe, entonces lo indica por chat:
 
-![noexiste](img/noexiste.jpg "Modelo no existe")
+<img src="img/noexiste.jpg">
 
 Si queremos hacer que deje de estar activo el módulo, podemos escribir en la consola `stop nombreModulo`:
 
-![stopmodule](img/stopmodule.jpg "Stop Module")
+<img src="img/stopmodule.jpg">
 
 Y vemos que ahora ya no hace nada el comando en FiveM:
 
-![nospawn](img/nospawn.jpg "Not spawn")
+<img src="img/nospawn.jpg">
 
 Pues con esto se termina el tutorial que debería permitiros poder desarrollar sin problemas módulos para FiveM.
 
